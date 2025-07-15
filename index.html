@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Amor por Você</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Para <span id="namePlaceholder">[Nome do Seu Amor]</span></h1>
+            <p class="subtitle">Um presente digital para lembrar o quanto você é especial</p>
+        </header>
+
+        <div class="heart-animation">
+            <div class="heart"></div>
+        </div>
+
+        <section class="love-letter">
+            <h2>Minha Querida Pessoa</h2>
+            <p>Não existem palavras suficientes para expressar o que sinto por você. Cada dia ao seu lado é um presente que eu nunca vou dar por garantido.</p>
+            <p>Você ilumina meus dias com seu sorriso, aquece meu coração com seu amor e me faz ser uma pessoa melhor só por estar na minha vida.</p>
+            <p>Este site é apenas um pequeno reflexo de tudo o que você significa para mim.</p>
+            <p class="signature">Com todo meu amor,<br><span id="yourName">[Seu Nome]</span></p>
+        </section>
+
+        <section class="memories">
+            <h2>Nossos Momentos</h2>
+            <div class="gallery">
+                <div class="photo-placeholder" id="photo1">Foto 1</div>
+                <div class="photo-placeholder" id="photo2">Foto 2</div>
+                <div class="photo-placeholder" id="photo3">Foto 3</div>
+            </div>
+            <button id="addMemoryBtn">Adicionar Mais Memórias</button>
+        </section>
+
+        <section class="countdown">
+            <h2>Próximo Encontro Especial</h2>
+            <div class="countdown-container">
+                <div class="countdown-box">
+                    <span id="days">00</span>
+                    <small>Dias</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="hours">00</span>
+                    <small>Horas</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="minutes">00</span>
+                    <small>Minutos</small>
+                </div>
+                <div class="countdown-box">
+                    <span id="seconds">00</span>
+                    <small>Segundos</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="reasons">
+            <h2>10 Razões Pelas Qual Eu Te Amo</h2>
+            <ol class="reasons-list">
+                <li>Seu sorriso ilumina meu dia</li>
+                <li>Seu coração generoso e amoroso</li>
+                <li>A forma como você me faz sentir especial</li>
+                <li>Sua inteligência e perspicácia</li>
+                <li>Seu apoio incondicional</li>
+                <li>A maneira como você me entende</li>
+                <li>Seu senso de humor incrível</li>
+                <li>Sua paixão pela vida</li>
+                <li>A segurança que sinto ao seu lado</li>
+                <li>Porque você é simplesmente você</li>
+            </ol>
+        </section>
+
+        <section class="music-player">
+            <h2>Nossa Música</h2>
+            <div class="player">
+                <div class="album-cover"></div>
+                <div class="player-controls">
+                    <h3 id="song-title">Nome da Música</h3>
+                    <p id="artist">Artista</p>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="controls">
+                        <button id="prev-btn"><i class="fas fa-backward"></i></button>
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button id="next-btn"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Feito com <i class="fas fa-heart"></i> por <span id="footerName">[Seu Nome]</span></p>
+            <p id="current-date"></p>
+        </footer>
+    </div>
+
+    <div class="modal" id="memoryModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Adicionar Nova Memória</h2>
+            <form id="memoryForm">
+                <input type="text" id="memoryTitle" placeholder="Título da memória" required>
+                <textarea id="memoryDescription" placeholder="Descreva esta memória especial..." required></textarea>
+                <input type="file" id="memoryPhoto" accept="image/*">
+                <button type="submit">Adicionar Memória</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
